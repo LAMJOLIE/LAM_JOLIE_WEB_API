@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NavBar CSS 開始*/
+
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+@keyframes logo_fade_in {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: logo_fade_in 0.6s ease;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+header.sticky{
+padding: 10px 100px;
+background-color: white;
+}
+
+header.sticky ul li a{
+    color: black;
+}
+
+header.sticky .logo{
+    color:black;
+}
+
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: logo_fade_in 0.6s ease;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: large;
+    animation: logo_fade_in 0.6s ease;
+}
+
+/* NavBar CSS 終了*/
+
+
+/* 検索エリアCSS　開始 */
+.main-search{
+    width: 100%;
+    /* min-height: 75vh; */
+    padding: 11%;
+    padding-top: 103px;
+    padding-bottom: 30px;
+    display: grid;
+    
+    background: url(../Picture/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-search h1{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#food-solgan{
+    width: 80%;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:#555555;
+}
+
+::placeholder{
+    color:#555555;
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color:#999999;
+    cursor: pointer;
+}
+
+#show_latitude{
+    color: white;
+    text-align: center;
+}
+
+#show_longitude{
+    color: white;
+    text-align: center;
+}
+
+/* 検索エリアCSS　終了 */
+
+/* 指定距離ボックスCSS　開始 */
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: rgba(255, 255, 255, 0.5);
+    background-image: none;
+    border-radius: 10px;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    line-height: 3;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px) saturate(180%);
+    overflow: hidden;
+    border-radius: 10px
+}
+
+select {
+    flex: 1;
+    padding: 0.5em;
+    color: #555555;
+    cursor: pointer;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all event;
+}
+
+.select:hover::after{
+    color: #555555;
+}
+
+/*指定距離ボックスCSS　終了*/

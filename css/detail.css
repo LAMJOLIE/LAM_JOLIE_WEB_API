@@ -1,0 +1,67 @@
+/* 検索結果の詳細CSS　開始*/
+body{
+    background-image: url(../Picture/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333333;
+}
+.pic {
+    text-align: center;
+}
+.intro {
+    margin: -60px 0 0 0;
+    text-align: center;
+}
+.detail{
+    margin-top: 100px;
+}
+.detail-container {
+    max-width: 960px;
+    margin: auto;
+    /* margin: 130px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    align-items: center;
+}
+.form-detail {
+    padding: 40px 40px;
+    /* line-height: 2.2; */
+}
+.form-group {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.label{
+    /* color: #cc288a; */
+    float: left;
+    margin-right: 20px;
+    margin-left: -155px;
+    width: 135px;
+    /* border-left: 3px solid #cc288a; */
+    /* border-bottom: 3px solid #cc288a; */
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.p{
+    float: left;
+    width: 300px;
+    background-color: #EEEEEE;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.map {
+    margin-right: -80px;
+}
+/* 検索結果の詳細CSS　終了*/

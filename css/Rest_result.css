@@ -1,0 +1,118 @@
+/*　検索結果の一覧表CSS　開始*/
+.place-content-wrap {
+    position: relative;
+}
+
+
+.place-content{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.restaurant-item{
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px) saturate(180%);
+    border-radius: 10px;
+    padding:15px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.item-box{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #555555;
+}
+
+.restaurant-item:hover{
+    /* background: rgba(220, 219, 219, 0.5); */
+    background:white;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.center-item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.restaurant-item img{
+    width: 40vmin;
+    height: 40vmin;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.restaurant-item h5{
+    padding: 0 45px;
+}
+/*　検索結果の一覧表CSS　終了*/
+
+/*　ページングCSS　開始*/
+
+#paging{
+    z-index: 100;
+    position: fixed;
+}
+
+#paging button {
+    width: 100px;
+    display: grid;
+    margin-bottom: 5px;
+}
+
+#pageBtn1{
+    font-size: 25px;
+    color:#555555;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(241, 185, 112);
+}
+
+#pageBtn1:hover{
+    background-color:rgb(243, 146, 21) ;
+}
+
+#pageBtn2{
+    font-size: 25px;
+    color:#555555;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(241, 185, 112);
+}
+
+#pageBtn2:hover{
+    background-color:rgb(243, 146, 21) ;
+}
+
+#pageBtn3{
+    font-size: 25px;
+    color:#555555;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(241, 185, 112);
+}
+
+#pageBtn3:hover{
+    background-color:rgb(243, 146, 21) ;
+}
+
+/*　*ページングCSS　終了*/
